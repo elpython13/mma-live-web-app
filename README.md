@@ -8,7 +8,7 @@ Plain static HTML and CSS with no build step. The only JavaScript is a small inl
 index.html          the page (store-link config is at the bottom, in STORE_LINKS)
 styles.css          dark theme using the app's palette (mma-live-frontend app/theme/colors.ts)
 404.html            not-found page (GitHub Pages serves it automatically)
-assets/             app icon (copied from mma-live-frontend store-assets/icons), apple-touch icon, OG image
+assets/             icon.svg (app icon cropped so the glyph fills ~85% of the tile; vector from /workspace/mma-design/play-store/icon/mmalive-icon.svg), PNG icons 512/192/180 rendered from it, OG image
 assets/screens/     Google Play phone screenshots as WebP, 360w and 720w (source: /workspace/mma-design/play-store/phone/listing/01-08, the Play phone set with real fighter photos in 02 and 07)
 favicon.ico
 robots.txt, sitemap.xml
