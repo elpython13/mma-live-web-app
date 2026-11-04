@@ -9,6 +9,7 @@ index.html          the page (store-link config is at the bottom, in STORE_LINKS
 styles.css          dark theme using the app's palette (mma-live-frontend app/theme/colors.ts)
 404.html            not-found page (GitHub Pages serves it automatically)
 assets/             app icon (copied from mma-live-frontend store-assets/icons), apple-touch icon, OG image
+assets/screens/     Google Play phone screenshots as WebP, 360w and 720w (source: /workspace/mma-design/play-store, IP-safe set)
 favicon.ico
 robots.txt, sitemap.xml
 CNAME               mma-live.com (custom domain for GitHub Pages)

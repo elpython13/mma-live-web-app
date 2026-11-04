@@ -125,3 +125,28 @@ h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.2; margin: 0 0 1.5rem
   background: var(--primary); color: var(--on-primary); font-weight: 700; text-decoration: none;
 }
 .notfound-icon { margin: 0 auto; border-radius: 22px; }
+
+/* Screenshot strip (Google Play phone set). Scrolls sideways at every width. */
+.screens { padding: 0 0 clamp(3rem, 8vw, 5rem); }
+.screens h2 { margin-bottom: .4rem; }
+.screens-hint { text-align: center; color: var(--text-muted); margin: 0 0 1.5rem; font-size: .95rem; }
+.shot-strip {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: var(--outline) transparent;
+  padding-bottom: 1rem;
+}
+.shot-strip:focus-visible { outline: 3px solid var(--primary); outline-offset: -3px; }
+.shot-list {
+  list-style: none; margin: 0; padding: 0 max(1.25rem, (100% - 1100px) / 2);
+  display: flex; gap: 1.25rem; width: max-content;
+}
+.shot { scroll-snap-align: center; flex: none; width: 240px; }
+.shot img {
+  width: 100%; height: auto; aspect-ratio: 9 / 16;
+  border-radius: 18px; border: 1px solid var(--outline);
+  background: var(--surface-2);
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+@media (max-width: 600px) { .shot { width: 62vw; } }
