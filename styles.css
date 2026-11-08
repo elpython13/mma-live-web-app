@@ -30,7 +30,7 @@ body {
 main { flex: 1 0 auto; }
 img, svg { display: block; max-width: 100%; }
 a { color: var(--primary); }
-a:focus-visible, .store-btn:focus-visible {
+a:focus-visible, .store-btn:focus-visible, #gallery:focus-visible {
   outline: 3px solid var(--primary);
   outline-offset: 3px;
   border-radius: 6px;
@@ -128,6 +128,8 @@ h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.2; margin: 0 0 1.5rem
 
 /* Screenshot strip (Google Play phone set). Scrolls sideways at every width. */
 .screens { padding: 0 0 clamp(3rem, 8vw, 5rem); }
+/* Offset the gallery hash target so a sticky/fixed header cannot cover the heading. */
+#gallery { scroll-margin-top: 5rem; }
 .screens h2 { margin-bottom: .4rem; }
 .screens-hint { text-align: center; color: var(--text-muted); margin: 0 0 1.5rem; font-size: .95rem; }
 .shot-strip {
