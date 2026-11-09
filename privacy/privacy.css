@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 1.25rem clamp(1rem, 4vw, 2rem) 2rem;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+.site-header {
+  max-width: 40rem;
+  margin: 0 auto 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.meta {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+section {
+  margin-bottom: 1.75rem;
+}
+
+section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+section p {
+  margin: 0;
+}
+
+section p + p {
+  margin-top: 0.75rem;
+}
+
+main a {
+  color: #0b57d0;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+.placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+.site-footer {
+  max-width: 40rem;
+  margin: 2.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e8e8e8;
+    background: #121212;
+  }
+
+  .subtitle,
+  .meta,
+  .placeholder,
+  .site-footer {
+    color: #a8a8a8;
+  }
+
+  .site-header {
+    border-bottom-color: #333;
+  }
+
+  .site-footer {
+    border-top-color: #333;
+  }
+
+  main a {
+    color: #8ab4ff;
+  }
+}
